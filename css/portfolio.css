@@ -1,0 +1,15 @@
+.container {
+  background-color: ivory;
+}
+
+.card1, .card2, .card3, .heading {
+  margin-top: 15px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: fill;
+}
+
+.heading {
+  border-bottom: solid black 2px;
+}
