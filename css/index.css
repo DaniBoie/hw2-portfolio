@@ -1,0 +1,43 @@
+.jumbotron {
+  margin-bottom: 0px;
+  padding-top: 10px;
+}
+.navText {
+  border-bottom: 1px white solid;
+  margin: 2px;
+}
+
+.mainPic {
+  text-align-last: center;
+  margin-bottom: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+.picFix {
+  max-width: 100%;
+  max-width: 350px;
+  height: auto;
+  border: solid black 5px;
+}
+
+.jumbofix {
+  text-align-last: center;
+}
+
+.aboutMe {
+  border-bottom: solid black 2px;
+  margin-bottom: 20px;
+}
+
+.mountPic {
+  text-align-last: center;
+  margin-bottom: 15px;
+  max-width: 100%;
+  max-height: 100px;
+  max-height: 100%;
+}
+
+p {
+  font-size: larger;
+}
