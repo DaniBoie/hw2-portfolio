@@ -1,7 +1,12 @@
+* {
+  font-family: 'Mulish', sans-serif;
+}
+
 .jumbotron {
   margin-bottom: 0px;
   padding-top: 10px;
 }
+
 .navText {
   border-bottom: 1px white solid;
   margin: 2px;
@@ -40,4 +45,8 @@
 
 p {
   font-size: larger;
+}
+
+.textCenter {
+  text-align: center;
 }

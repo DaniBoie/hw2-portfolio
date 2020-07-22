@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .mainBtn {
+
+      height: 200px;
+      width: 50%;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mainBtn">
+    <button onclick=startBtn() class="mainBtn">Click to Start Playing!</button>
+  </div>
+
+  <script>
+
+    let win = 0
+    let lose = 0
+    let tie = 0
+
+    function score() {
+      if (win + lose + tie === 10) {
+        alert(` 
+      Your Final Score!
+      -----------------  
+      Wins: ${win}
+      Losses: ${lose}
+      Ties: ${tie}
+      `)
+      } else {
+        alert(` 
+      Wins: ${win}
+      Losses: ${lose}
+      Ties: ${tie}
+      `)
+      }
+
+    }
+
+    function startBtn() {
+
+      for (let i = 0; i < 10; i++) {
+        let response = prompt('Pick a weapon! (r, p, s)')
+        let compResponse = Math.floor(Math.random() * 3)
+        console.log(compResponse)
+
+        switch (response) {
+          case 'r':
+            if (compResponse === 0) {
+              alert('Rock vs. Rock! You have tied!')
+              tie = tie + 1
+              console.log(tie)
+              score()
+
+            } else if (compResponse === 1) {
+              alert('Rock vs Paper! You Lose!')
+              lose = lose + 1
+              score()
+            } else if (compResponse === 2) {
+              alert('Rock vs. Scissors! You Win!')
+              win = win + 1
+              score()
+            }
+            break;
+
+          case 'p':
+            if (compResponse === 0) {
+              alert('Paper vs Rock! You Win!')
+              win = win + 1
+              score()
+
+            } else if (compResponse === 1) {
+              alert('Paper vs. Paper! You Tied!')
+              tie = tie + 1
+              score()
+            } else if (compResponse === 2) {
+              alert('Paper vs Scissors! You Lost!')
+              lose = lose + 1
+              score()
+            }
+            break;
+
+          case 's':
+            if (compResponse === 0) {
+              alert('Scissors vs. Rock! You Lose!')
+              lose = lose + 1
+              score()
+
+            } else if (compResponse === 1) {
+              alert('Scissors vs. Paper! You Win!')
+              lose = lose + 1
+              score()
+            } else if (compResponse === 2) {
+              alert('Scissors vs. Scissors! You Tied!')
+              tie = tie + 1
+              score()
+            }
+            break;
+        }
+      }
+    }
+
+  </script>
+</body>
+
+</html>

@@ -1,5 +1,10 @@
 .container {
-  background-color: ivory;
+  /* background-color: ivory; */
+  align-items: center;
+  border: solid black 2px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: #e9ecef;
 }
 
 .card1, .card2, .card3, .heading {
@@ -7,9 +12,18 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  object-fit: fill;
+  align-items: center;
+  align-content: center;
 }
 
 .heading {
   border-bottom: solid black 2px;
+}
+
+.row2head {
+  margin-top: 15px;
+}
+
+body {
+  background-color: rgba(0, 123, 255, 0.1);
 }
