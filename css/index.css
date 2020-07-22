@@ -2,9 +2,14 @@
   font-family: 'Mulish', sans-serif;
 }
 
+p {
+  font-size: larger;
+}
+
 .jumbotron {
   margin-bottom: 0px;
   padding-top: 10px;
+  margin-bottom: 20px;
 }
 
 .navText {
@@ -41,10 +46,6 @@
   max-width: 100%;
   max-height: 100px;
   max-height: 100%;
-}
-
-p {
-  font-size: larger;
 }
 
 .textCenter {
