@@ -50,3 +50,14 @@ p {
 .textCenter {
   text-align: center;
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #007bff;
+  color: #e9ecef;
+  text-align: center;
+  height: 2rem;
+}
